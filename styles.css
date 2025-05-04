@@ -57,6 +57,17 @@ h6 {
 }
 
 /* My Styles */
+body {
+  background-color: #1c1c1c;
+  font-family: 'Karla', sans-serif;
+  font-optical-sizing: auto;
+  letter-spacing: -1px;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  font-size: 1rem;
+}
+
 .random-pass--title {
   font-size: 2.5rem;
   font-weight: 800;
@@ -89,21 +100,14 @@ h6 {
 }
 
 .random-pass--btn:hover,
-.random-pass--btn:focus {
+.random-pass--btn:focus,
+.clipboardBtn:hover,
+.clipboardBtn:focus {
   background-color: #1c1c1c;
+  color: #fff;
 }
 
 /* Layout */
-body {
-  background-color: #1c1c1c;
-  font-family: 'Karla', sans-serif;
-  font-optical-sizing: auto;
-  letter-spacing: -5%;
-  height: 100vh;
-  display: grid;
-  place-content: center;
-  font-size: 1rem;
-}
 
 .random-pass--wrapper {
   background-color: #ecfdf5;
@@ -125,10 +129,23 @@ body {
 .random-pass--form-control {
   border: 0;
   background-color: #273549;
-  font-family: inherit;
+  font-family: monospace;
   color: #5def92;
   padding: 0.25em;
   font-size: 1rem;
   text-align: center;
   border-radius: 0.375rem;
+}
+
+.random-pass--input-wrapper {
+  display: flex;
+  gap: 0.5em;
+}
+
+.clipboardBtn {
+  border: 0;
+  border-radius: 0.375rem;
+  background-color: #10b981;
+  padding: 0.25em 0.5em;
+  cursor: pointer;
 }

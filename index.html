@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="https://fav.farm/🔒 " />
     <title>Password Generator - Scrimba Solo Project</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -24,16 +27,28 @@
       </div>
 
       <div class="random-pass--form-wrapper">
-        <input
-          id="first-password"
-          type="text"
-          class="random-pass--form-control"
-        />
-        <input
-          id="second-password"
-          type="text"
-          class="random-pass--form-control"
-        />
+        <div class="random-pass--input-wrapper">
+          <input
+            id="first-password"
+            type="text"
+            class="random-pass--form-control"
+            disabled
+          />
+          <button class="clipboardBtn" title="Copy to Clipboard">
+            <i class="bi bi-clipboard"></i>
+          </button>
+        </div>
+        <div class="random-pass--input-wrapper">
+          <input
+            id="second-password"
+            type="text"
+            class="random-pass--form-control"
+            disabled
+          />
+          <button class="clipboardBtn" title="Copy to Clipboard">
+            <i class="bi bi-clipboard"></i>
+          </button>
+        </div>
       </div>
     </section>
     <script src="script.js"></script>
